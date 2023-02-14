@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 780px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 730px)" href="style.css">
+    <script src="https://kit.fontawesome.com/20cee36f21.js"crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Travel</a>
+      <ul class="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">More</a></li>
+      </ul>
+
+      <div class="fa-solid fa-bars" id="menu-icon"></div>
+    </header>
+
+    <section class="home">
+      <div class="home-text">
+        <h4>Travel Website Page</h4>
+        <h1>Wind In <br />The Storms</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo
+          laborum aliquam quis natus sequi nostrum consectetur recusandae ex
+          doloribus.
+        </p>
+        <a href="#" class="home-btn">Details</a>
+      </div>
+    </section>
+
+    <div class="home-icon">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+    </div>
+
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navlist = document.querySelector('.navlist');
+
+      menu.onclick = () => {
+        menu.classList.toggle('fa-xmark');
+        navlist.classList.toggle('open');
+      }
+    </script>
+  </body>
+</html>
